@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-DO-List</title>
+    <link rel="shortcut icon" href="./img/icon.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="index.css">
+   
+</head>
+<body>
+    
+    <div class="container">
+        <div class="containerMain">
+                <h1>待办清单</h1>
+                <p style="font-size: 1em;">有什么需要做的？</p>
+                <input type="text" id="ListInput" placeholder="请输入待办事项并添加，请勿刷新">
+                <button class="add" id="Btn"  onclick="newElement()">添加</button>
+            <ul id="doingThings">
+                <li>100个俯卧撑分5组做完</li>
+                <li>2km间歇跑</li>
+                <li>吹30分钟口琴</li>
+                <li>看30min书</li>
+            </ul>
+            <button class="cleanAll" onclick="cleanAllList()">一键清除</button>
+        </div>
+    </div>
+    
+    
+</body>
+<script src="./ToDoList.js"></script>
+</html>
